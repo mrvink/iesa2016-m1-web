@@ -1,3 +1,5 @@
+![Git icon](https://scr.sad.supinfo.com/articles/resources/172195/1410/0.png)
+
 #QUIZ GIT
 
 ##Question 1
