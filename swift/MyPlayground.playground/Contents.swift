@@ -39,5 +39,19 @@ var occupations = [
     "Kaylee" : "Mechanic" ]
 occupations["Jayne"] = "Public Relations"
 
-shoppingList[10] = "too big?"
+//shoppingList[10] = "too big?"
 var strangeList = ["catfish", 33, 22.2]
+
+
+//07 Empty array
+var emptyArray = [String]()
+emptyArray.append("Hello")
+emptyArray.append(33) //???
+let emptyDictionnary = [String : Float]()
+
+
+//07.bis
+var emptyArray2 = [] //il s'agit ici d'un type NSarray
+emptyArray2.append("Hello") //il n'y a pas d'append sur les type NSarray
+emptyArray2.append(33)
+
