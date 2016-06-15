@@ -165,7 +165,7 @@ var secondForLoop = 0
 for var i = 0; i < 4; ++i { secondForLoop += i }
 print(secondForLoop)
 
-//FONCTIONS & CLOSURES
+//FUNCTIONS & CLOSURES
 
 //14 Fonction
 func greet(name: String, day: String) -> Void {
@@ -174,10 +174,35 @@ func greet(name: String, day: String) -> Void {
 greet("Bob", day: "Tuesday")
 
 
+// TUPLE
+let min = 10
+let max = 20
+let value = 15
+var range = (value, min, max)
+print(range.1)
 
 
+//15
+func greetTuple(name: String, day: String) -> (String, String, String) {
+    return (name, day,  "Hello \(name), today is \(day).")
+}
+var f = greetTuple("Bob", day: "Tuesday")
+f.1
+
+//TUPLE = name, day, result
 
 
-
-
-
+//15
+func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
+    var min = scores[0]
+    var max = scores[0]
+    var sum = 0
+    for score in scores {
+        if score > max { max = score } else if score < min { min = score }
+        sum += score
+    }
+    return (min, max, sum)
+}
+let statistics = calculateStatistics([5, 3, 100, 3, 9])
+print(statistics.sum)
+print(statistics.2)
