@@ -46,12 +46,43 @@ var strangeList = ["catfish", 33, 22.2]
 //07 Empty array
 var emptyArray = [String]()
 emptyArray.append("Hello")
-emptyArray.append(33) //???
+//emptyArray.append(33) //???
 let emptyDictionnary = [String : Float]()
 
 
 //07.bis
 var emptyArray2 = [] //il s'agit ici d'un type NSarray
-emptyArray2.append("Hello") //il n'y a pas d'append sur les type NSarray
-emptyArray2.append(33)
+//emptyArray2.append("Hello") //il n'y a pas d'append sur les type NSarray
+//emptyArray2.append(33)
+
+//08
+
+
+
+
+
+
+//CONTROL FLOW
+//If else
+var score = 0
+var teamScore = 0
+
+if score > 50 {
+teamScore += 3
+} else {
+    teamScore += 1
+}
+
+
+//For
+
+var individualScores = [2, 14, 21, 46]
+for score in individualScores {
+    
+}
+
+
+
+
+
 
