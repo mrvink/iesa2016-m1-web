@@ -165,6 +165,14 @@ var secondForLoop = 0
 for var i = 0; i < 4; ++i { secondForLoop += i }
 print(secondForLoop)
 
+//FONCTIONS & CLOSURES
+
+//14 Fonction
+func greet(name: String, day: String) -> Void {
+     "Hello \(name), today is \(day)."
+}
+greet("Bob", day: "Tuesday")
+
 
 
 
