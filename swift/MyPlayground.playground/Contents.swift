@@ -225,3 +225,49 @@ func returnFifteen() -> Int {
     return y
 }
 returnFifteen()
+
+
+//20 Closure
+var numbers = [22, 2, 15]
+
+var v = numbers.map({
+    (number: Int) -> Int in
+    let result = 3 * number
+    return result
+})
+
+print(v)
+
+
+
+//20.bis
+var prenoms = ["Paul", "Olivia", "Lauryne"]
+
+var p = prenoms.map({
+    (prenom: String) -> String in
+    return "Bonjour \(prenom)"
+})
+
+print(p)
+
+
+var people = [(name:"Paul", age:20)]
+
+var mm = people.map({
+    (person: (String, Int)) -> Int in
+    return person.1
+})
+
+print(mm)
+
+
+//21 Closure
+let mappedNumbers = numbers.map({ number in 3 * number })
+print(mappedNumbers)
+
+
+
+
+//OBJETS ET CLASSES
+
+
