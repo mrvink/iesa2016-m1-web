@@ -127,9 +127,9 @@ print("optionalString2 = \(optionalString2)")
 
 
 
-//SWITCH CASE
+//CONTROL FLOW
 
-//11
+//11 Switch case
 var vegetableComment :String
 let vegetable = "red pepper"
 switch vegetable{
@@ -142,5 +142,34 @@ default:
 }
 
 print("Result : \(vegetableComment)")
+
+
+
+
+//12 While / do
+var n = 2
+while n < 100 { n = n * 2 }
+print(n)
+
+var m = 2
+repeat { m = m * 2 } while m < 100
+print(m)
+
+
+//13 For .. variantes
+var firstForLoop = 0
+for i in 0..<4 { firstForLoop += i }
+print(firstForLoop)
+
+var secondForLoop = 0
+for var i = 0; i < 4; ++i { secondForLoop += i }
+print(secondForLoop)
+
+
+
+
+
+
+
 
 
