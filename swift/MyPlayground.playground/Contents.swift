@@ -206,3 +206,22 @@ func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
 let statistics = calculateStatistics([5, 3, 100, 3, 9])
 print(statistics.sum)
 print(statistics.2)
+
+
+//16 Arguments variables
+func sumOf(numbers: Int...) -> Int {
+    var sum = 0
+    for number in numbers { sum += number }
+    return sum
+}
+sumOf()
+sumOf(42, 597, 12)
+
+//17 Nested fonctions
+func returnFifteen() -> Int {
+    var y = 10
+    func add() { y += 5 }
+    add()
+    return y
+}
+returnFifteen()
