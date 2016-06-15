@@ -127,5 +127,20 @@ print("optionalString2 = \(optionalString2)")
 
 
 
+//SWITCH CASE
+
+//11
+var vegetableComment :String
+let vegetable = "red pepper"
+switch vegetable{
+case "cucumber","watercress":
+    vegetableComment = "That would make a good tea sandwich."
+case let x where x.hasSuffix("pepper"):
+    vegetableComment = "Is it a spicy \(x)?"
+default:
+    vegetableComment = "Everything tastes good in soup."
+}
+
+print("Result : \(vegetableComment)")
 
 
