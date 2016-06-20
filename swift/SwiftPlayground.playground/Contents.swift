@@ -79,10 +79,25 @@ triangle.perimeter = 9.9
 print(triangle.sideLength)
 
 
+
+
+
+
+
+
 class Person {
+ 
+    enum Sex: Int {
+        case Man
+        case Woman
+        case Other
+        case Unknown
+    }
+    
     var name: String = ""
     var age: Int = 0
-
+    var sexe: Sex = Sex.Unknown
+    
     func getName() -> String {
         return name
     }
@@ -96,6 +111,13 @@ class Person {
     }
     func setAge(age: Int) {
         self.age = age
+    }
+    
+    func getSex() -> Sex {
+        return sexe
+    }
+    func setSex(sexe: Sex) {
+        self.sexe = sexe
     }
 }
 
@@ -111,6 +133,55 @@ class Counter {
 
 var counter = Counter()
 counter.incrementBy(2, numberOfTimes: 7)
+
+
+
+
+// 31 ENUM & RAWVALUE
+
+enum Rank: Int {
+    case Ace = 1
+    case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
+    case Jack, Queen, King
+    func getInfo() -> String {
+        switch self {
+        case .Ace: return "ace"
+        case .Jack: return "jack"
+        case .Queen: return"queen"
+        case .King: return"king"
+        default: return String(self.rawValue)
+        }
+    }
+}
+let ace = Rank.Ace
+let aceRawValue = ace.rawValue
+
+
+
+
+// 34 STRUCTURE
+
+struct Card {
+    var rank: Rank
+    var suit: Suit
+    func simpleDescription() -> String {
+        return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
+    }
+}
+let threeOfSpades = Card(rank: .Three, suit: .Spades)
+let threeOfSpadesDescription = ThreeOfSpades.simpleDescription
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
