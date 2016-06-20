@@ -158,7 +158,6 @@ let aceRawValue = ace.rawValue
 
 
 
-
 // 34 STRUCTURE
 
 struct Card {
