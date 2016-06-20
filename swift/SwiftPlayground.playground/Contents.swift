@@ -29,3 +29,27 @@ class NamedShape {
 }
 
 var carre = NamedShape(name: "drapeau")
+
+
+// 26 HERITAGE / SOUS CLASSE
+class Square : NamedShape {
+    var sideLength: Double
+    init(length: Double, name: String) {
+        self.sideLength = length
+        super.init(name: name)
+        sidesCount = 4
+    }
+    func area() -> Double {
+        return sideLength * sideLength
+    }
+    override func getInfo() -> String {
+        return "Square: L=\(sideLength)."
+    }
+}
+let s = Square(length:5.2, name:"myS")
+s.area()
+s.getInfo()
+
+
+
+
