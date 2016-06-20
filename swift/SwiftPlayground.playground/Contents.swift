@@ -52,4 +52,56 @@ s.getInfo()
 
 
 
+// 27 ACCESSEURS
+class EquilateralTriangle: NamedShape {
+    var sideLength: Double = 0.0
+    init(length: Double, name: String) {
+        self.sideLength = length
+        super.init(name: name)
+        sidesCount = 3
+}
+
+    var perimeter: Double {
+        get {
+            return 3.0 * sideLength
+        }
+        set {
+            sideLength = newValue / 3.0
+        }
+    }
+    override func getInfo() -> String {
+        return "Length=\(sideLength)"
+    }}
+var triangle = EquilateralTriangle(
+    length: 3.1, name: "a triangle")
+print(triangle.perimeter)
+triangle.perimeter = 9.9
+print(triangle.sideLength)
+
+
+class Person {
+    var name: String = ""
+    var age: Int = 0
+
+    func getName() -> String {
+        return name
+    }
+    
+    func setName(name: String) {
+        self.name = name
+    }
+    
+    func getAge() -> Int {
+        return age
+    }
+    func setAge(age: Int) {
+        self.age = age
+    }
+}
+
+
+
+
+
+
 
