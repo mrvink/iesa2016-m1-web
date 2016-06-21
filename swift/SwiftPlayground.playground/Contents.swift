@@ -159,7 +159,7 @@ let aceRawValue = ace.rawValue
 
 
 // 34 STRUCTURE
-
+/*
 struct Card {
     var rank: Rank
     var suit: Suit
@@ -169,6 +169,7 @@ struct Card {
 }
 let threeOfSpades = Card(rank: .Three, suit: .Spades)
 let threeOfSpadesDescription = ThreeOfSpades.simpleDescription
+*/
 
 
 
@@ -176,15 +177,37 @@ let threeOfSpadesDescription = ThreeOfSpades.simpleDescription
 
 
 
+// ACCESS CONTROL
+
+class Book {
+    var titre: String = ""
+    var auteur: String = ""
+    var description: String = ""
+    
+    private func getDescription() -> String {
+        return "Ma description du livre : \(book.titre) écrit par \(book.auteur)"
+    }
+    
+}
+
+var book = Book()
+book.titre = "Mon titre"
+book.auteur = "Mon auteur"
+
+
+book.getDescription()
 
 
 
 
+class Author {
+    var nom: String = ""
+    var prenom: String = ""
+}
 
-
-
-
-
+var author = Author()
+author.nom = "Chesnau"
+author.prenom = "Alain"
 
 
 
